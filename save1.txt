@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>TripTrek - Website</title>
+</head>
+<body>
+    <nav>
+        <!-- Logo and text -->
+        <div class="logo-section">
+            <img src="./Images/Logo.png" alt="TripTrek Logo" class="logo-img"> <!-- Add your logo image -->
+            <a href="./index.html" class="logo-text">TripTrek</a>
+        </div>
+
+        <!-- Hamburger menu icon (for mobile view) -->
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="./index.html" class="navBarItem diff-font-nav">How it works</a></li>
+            <li><a href="./index.html" class="navBarItem diff-color-nav">Corporate</a></li>
+            <li><a href="./index.html" class="navBarItem diff-color-nav">What we do</a></li>
+            <li><a href="./index.html" class="navBarItem diff-color-nav">Contact us</a></li>
+        </ul>
+
+        <!-- Sign In button -->
+        <a href="./signin.html" class="sign-in-button">Sign In</a>
+    </nav>
+    
+    <div class="container">
+        <div class="bg-art-mobile">
+            <img src="./Images/Group 1.svg" alt="bg-art">
+        </div>
+    </div>
+    
+    <div class="icon-arrow-mobile">
+        <img src="./Images/Icon Acrylic.png" alt="bg-arrow-THING">
+    </div>
+    
+    <div class="title-mobile">
+        <img src="./Images/TitleThing-MOBILE.svg" alt="bg-arrow-THING">
+    </div>  
+
+    <div class="image-mobile">
+        <img src="./Images/Image-Mobile.svg" alt="Yh yh"></img>
+    </div>
+
+    <div class="bg-art-desktop"><img loading="lazy" src="./Images/Bg-Art.png" alt="bg-art"></div>
+
+    <img src="./Images/Moving Passion within.svg" alt="TITLE-1" class="title-1"></img>
+    <p class="title-2">Unified Sea Travel Platform</p>
+
+    <img src="./Images/Images-Desktop.svg" alt="Images-Desktop" class="Image-Desktop"></img>
+    <a href="./index.html" class="learnMore">Learn More</a>
+
+
+    <p class="why-travel">Why Travel With Us? 🚚💨</p>
+    <p class="why-travel travel-2">We have developed and curated the entire TripTrek Platform with Security, Convinience and Ease of Acces in mind. It helps customers travel arround the Maldives in a few taps.</p>
+    
+    <div class="reasons-travel-desktop">
+        <div class="base">
+            <img src="./Images/Phone.svg" alt="Phone" class="Image-base">
+            <p class="text-thing-1">Support</p>
+            <p class="text-thing-2">Delivering faster and more personalized support with better and improved AI and real humans for ease of mind.</p>
+            <a href="./index.html" class="learn-btn-2">Learn more</a>
+        </div>
+        <div class="base">
+            <img src="./Images/SomeThing.svg" alt="ion know what this is" class="Image-base">
+            <p class="text-thing-1">Instant Booking</p>
+            <p class="text-thing-2">Get your booking confirmation and ticket faster than ever. With the help of our system life is much easier now !</p>
+            <a href="./index.html" class="learn-btn-2">Learn more</a>
+        </div>
+        <div class="base">
+            <img src="./Images/DollaSign.svg" alt="DollaSign" class="Image-base">
+            <p class="text-thing-1">No Price Change</p>
+            <p class="text-thing-2">Wether you book with us or not, you will pay the same ith the lowest avalible rates offered to you.</p>
+            <a href="./index.html" class="learn-btn-2 special-dola">Learn more</a>
+        </div>
+        <div class="base">
+            <img src="./Images/Message.svg" alt="Phone" class="Image-base">
+            <p class="text-thing-1">Private Hire</p>
+            <p class="text-thing-2">Now you can hire a vessel for that decade old family trip or just a vessel for yourself to unwind and relax.</p>
+            <a href="./index.html" class="learn-btn-2">Learn more</a>
+        </div>
+    </div>
+
+    <div class="reasons-travel-mobile">
+        <div class="cloumn-1 def-column">
+            <div class="base">
+                <img src="./Images/Phone.svg" alt="Phone" class="Image-base">
+                <p class="text-thing-1">Support</p>
+                <p class="text-thing-2">Delivering faster and more personalized support with better and improved AI and real humans for ease of mind.</p>
+                <a href="./index.html" class="learn-btn-2">Learn more</a>
+            </div>
+            <div class="base bottom">
+                <img src="./Images/SomeThing.svg" alt="ion know what this is" class="Image-base">
+                <p class="text-thing-1">Instant Booking</p>
+                <p class="text-thing-2">Get your booking confirmation and ticket faster than ever. With the help of our system life is much easier now !</p>
+                <a href="./index.html" class="learn-btn-2">Learn more</a>
+            </div>
+        </div>
+        <div class="cloumn-2 def-column">
+            <div class="base">
+                <img src="./Images/DollaSign.svg" alt="DollaSign" class="Image-base">
+                <p class="text-thing-1">No Price Change</p>
+                <p class="text-thing-2">Wether you book with us or not, you will pay the same ith the lowest avalible rates offered to you.</p>
+                <a href="./index.html" class="learn-btn-2 special-dola">Learn more</a>
+            </div>
+            <div class="base bottom">
+                <img src="./Images/Message.svg" alt="Phone" class="Image-base">
+                <p class="text-thing-1">Private Hire</p>
+                <p class="text-thing-2">Now you can hire a vessel for that decade old family trip or just a vessel for yourself to unwind and relax.</p>
+                <a href="./index.html" class="learn-btn-2 special-hire">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <img src="./Images/Wave.svg" class="Wave-Bottom" alt="Wave">
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active'); // Add this to toggle the active class
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

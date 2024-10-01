@@ -1,0 +1,685 @@
+/* General Styles */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* This will prevent horizontal scrolling */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #9b9b9b;  /* Color of the scrollbar handle on hover */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;  /* Color of the scrollbar handle */
+}
+
+body, .navBarItem {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(95, 94, 94, 0.4);
+    height: 80px;
+    z-index: 100;
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.image-mobile {
+    display: none;
+}
+
+.container {
+    display: none;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bolder; /* or 800 */
+    color: #2D3436;
+    text-shadow: -0.3px 0, 0 0.3px, 0.3px 0, 0 -0.3px, -0.3px -0.3px, 0.3px 0.3px, -0.3px 0.3px, 0.3px -0.3px;
+    text-decoration: none;
+    transform: scale(1.2); /* Adjust as needed */
+}
+
+.bg-art-desktop {
+    position: relative;
+    left: 499px;
+    top: -110px;
+    width: 100%;
+    height: 50%;
+}
+
+.blue-thing {
+    background-color: #0064E5;
+    width: 276px;
+    height: 51px;
+    position: relative;
+    left: 834px;
+    top: -926px;
+    z-index: -10;
+    border-radius: 100000px;
+}
+
+.title-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 470px;
+    width: 950px;
+    height: 550px;
+    color: #2D3436;
+    text-shadow: -0.5px 0, 0 0.5px, 0.5px 0, 0 -0.5px, -0.5px -0.5px, 0.5px 0.5px, -0.5px 0.5px, 0.5px -0.5px;
+    top: -950px;
+}
+
+.title-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 900;
+    text-decoration: dotted;
+    color: #2D3436;
+    text-shadow: -0.5px 0, 0 0.5px, 0.5px 0, 0 -0.5px, -0.5px -0.5px, 0.5px 0.5px, -0.5px 0.5px, 0.5px -0.5px;
+    top: -1230px;
+}
+
+.footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.Wave-Bottom {
+    width: 100%;
+}
+
+/* Nav items */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 30px;
+    position: relative;
+}
+
+.mainWrapper {
+    position: relative;
+    height: 10px;
+    top: 90px;
+}
+
+.icon-arrow-mobile {
+    display: none;
+}
+
+.title-mobile {
+    display: none;
+}
+
+/* Adding the dots between nav items */
+nav li::after {
+    content: "•";
+    margin-left: 20px;
+    color: #7C7C7C;
+}
+
+nav li:last-child::after {
+    content: ""; /* Remove dot from the last nav item */
+}
+
+.bg-art-mobile {
+    display: none;
+}
+
+/* Colors for the navigation items */
+.navBarItem {
+    font-size: 16px;
+    text-decoration: none;
+    color: #2D3436;
+    font-weight: 500;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    border: none;
+}
+
+.diff-color-nav {
+    color: #0570FA; /* Applying the different color back */
+}
+
+.reasons-travel-desktop {
+    display: flex;
+    gap: 90px;
+    justify-items: center;
+    position: relative;
+    top: -1470px;
+    align-items: center;
+    justify-content: center; /* Center grid horizontally within its container */
+    align-content: center;   /* Center grid vertically within its container */
+    height: 100vh;           /* Make sure it takes the full viewport height */
+}
+
+.text-thing-1 {
+    font-size: 30px;
+    position: relative;
+    font-weight: 700;
+    color: #2D3436;
+    text-shadow: -0.2px 0, 0 0.2px, 0.2px 0, 0 -0.2px, -0.2px -0.2px, 0.2px 0.2px, -0.2px 0.2px, 0.2px -0.2px;
+    top: -13px;
+    left: 3px;
+}
+
+.learn-btn-2 {
+    position: relative;
+    background-color: transparent;
+    color: #6C5CE7;
+    padding: 13px 30px;
+    border: 1px solid #2D3436; /* Added border width of 4px */
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    text-shadow: -0.2px 0, 0 0.2px, 0.2px 0, 0 -0.2px, -0.2px -0.2px, 0.2px 0.2px, -0.2px 0.2px, 0.2px -0.2px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.special-dola {
+    position: relative;
+    top: 23px;
+}
+
+.text-thing-2 {
+    font-size: 16px;
+    position: relative;
+    width: 270px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #2D3436;
+    top: -26px;
+    left: 3px;
+}
+
+.base {
+    width: 270px;
+    height: 330px;
+}
+
+.diff-font-nav {
+    font-weight: 600;
+}
+
+/* Sign In Button */
+.sign-in-button {
+    background-color: #0570FA;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+/* Hover state for Sign In button */
+.sign-in-button:hover {
+    background-color: #005bb5;
+}
+
+.hamburger {
+    display: none;
+}
+
+.Image-Desktop {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -1230px;
+    left: 300px;
+}
+
+.why-travel {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    left: 280px;
+    top: -1200px;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: dotted;
+    color: #2D3436;
+}
+
+.travel-2 {
+    font-size: 17px;
+    font-weight: lighter;
+    width: 100%;
+    height: 100%;
+    top: -1200px;
+    line-height: 32px;
+}
+
+.learnMore {
+    background-color: #0570FA;
+    color: white;
+    position: relative;
+    top: -1370px;
+    left: 295px;
+    padding: 23px 70px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+.Wave-Bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bg-art-mobile-wave {
+    display: none;
+}
+
+.reasons-travel-mobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .bg-art-desktop {
+        display: none;
+    }
+
+    .learnMore-Desktop {
+        display: none;
+    }
+
+    .Image-Desktop {
+        display: none;
+    }
+
+    .image-mobile {
+        display: flex;
+        width: 100%; /* Full width */
+        height: 100%; /* Full viewport height */
+        position: relative;
+        justify-content: left;
+        align-items: left; /* Center items vertically */
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+        top: -230px;
+    }
+
+    /* Adjusting logo size and spacing */
+    .logo-section {
+        justify-content: flex-start; /* Align logo closer to the hamburger */
+        flex-grow: 1;
+    }
+
+    .logo-img {
+        width: 70px; /* Slightly larger logo */
+        height: 70px;
+        margin-left: 20px; /* Small margin between hamburger and logo */
+    }
+
+    .logo-text {
+        font-size: 24px;
+        display: none; /* Keep the text hidden on mobile */
+    }
+
+    .dots {
+        display: flex;
+        justify-content: right;
+        top: 10px;
+        left: 212px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .title-mobile {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: -400px;
+    }
+
+    .reasons-travel-desktop {
+        display: none;
+    }
+
+    .container { /* Common parent container */
+        display: flex; /* Horizontal layout */
+        width: 100%; /* Full width */
+    }
+
+    .bg-art-mobile {
+        display: flex;
+        width: 100%; /* Full width */
+        height: 100%; /* Full viewport height */
+        justify-content: left;
+        align-items: left; /* Center items vertically */
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .icon-arrow-mobile {
+        display: flex; /* Make it a flex container */
+        justify-content: center; /* Center the arrow horizontally */
+        align-items: center; /* Center the arrow vertically */
+        height: auto; /* Adjust based on content */
+        margin-top: -65px; /* Adjust this value as needed to position correctly below bg */
+    }
+
+    .title-1 {
+        display: none;
+    }
+
+    .title-2 {
+        display: none;
+    }
+
+    .why-travel {
+        display: flex;
+        justify-content: left;
+        position: relative;
+        left: 20px;
+        top: -240px;
+        font-size: 20px;
+    }
+
+    .reasons-travel-mobile {
+        position: relative;
+        display: flex;
+        padding: 0px 10px 0px 10px;
+        justify-content: center;
+        gap: 15px;
+        top: -200px;
+    }
+
+    .text-thing-1 {
+        font-size: 18px;
+        position: relative;
+        font-weight: 700;
+        color: #2D3436;
+        text-shadow: -0.05px 0, 0 0.05px, 0.05px 0, 0 -0.05px, -0.05px -0.05px, 0.05px 0.05px, -0.05px 0.05px, 0.05px -0.05px;
+        top: -13px;
+        left: 3px;
+    }
+
+    .Image-base {
+        width: 53px;
+        height: 53px;
+    }
+
+    .bottom {
+        position: relative;
+        top: 60px;
+    }
+    
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6C5CE7;
+        padding: 10px 20px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .special-dola {
+        position: relative;
+        top: 23px;
+    }
+
+    .special-hire {
+        position: relative;
+        top: 22.5px;
+    }
+    
+    .text-thing-2 {
+        font-size: 13px;
+        position: relative;
+        width: 100%;
+        font-weight: 300;
+        line-height: 25px;
+        color: #2D3436;
+        top: -26px;
+        left: 3px;
+    }
+    
+    .base {
+        width: 180px;
+        height: 273px;
+    }    
+
+    .def-column {
+        display: flex; /* or 'display: grid;' if you're using grid layout */
+        flex-direction: column; /* Ensures the elements stack vertically */
+        gap: 1px;
+    }
+    
+    .travel-2 {
+        font-size: 13px;
+        position: relative;
+        width: 100%;
+        height: 70px;
+        line-height: 25px;
+        padding: 0px 40px 0px 0px; /* Padding applied on all sides */
+        background-color: transparent; /* Added to help visualize padding */
+    }
+    
+    /* Optional: Adding box-sizing to ensure padding doesn't overflow the element */
+    .travel-2 {
+        box-sizing: border-box;
+    }    
+    
+    /* Show the hamburger menu on mobile */
+    .hamburger {
+        display: flex; /* Make the hamburger visible */
+        flex-direction: column;
+        cursor: pointer;
+        width: 25px;
+        position: absolute;
+        left: 10px;
+        justify-content: center;
+        z-index: 2000;
+        padding: 8px;
+        background-color: transparent;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .hamburger div {
+        background-color: #353535;
+        height: 4px;
+        border-radius: 50px;
+        margin: 3px 0;
+        transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.4s ease;
+    }
+
+    /* Add hover effect for the hamburger background */
+    .hamburger:hover {
+        background-color: transparent;
+    }
+
+    /* Animation for the hamburger icon to become an "X" when clicked */
+    .hamburger.active div:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* Mobile navigation */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(95, 94, 94, 0.4);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out; /* Add smooth transition for the nav */
+    }
+
+    nav ul.active {
+        max-height: 300px; /* Adjust the height as per your number of items */
+    }
+
+    nav li {
+        margin: 10px 0;
+        padding: 3px;
+        background-color: transparent;
+    }
+
+    nav li:last-child {
+        border-bottom: none; /* Remove divider for the last item */
+    }
+
+    nav li::after {
+        content: "";
+        margin-left: 10px;
+    }
+
+    .learnMore {
+        background-color: #0570FA;
+        color: white;
+        position: relative;
+        top: -340px;
+        left: 272px;
+        padding: 13px 28px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    /* Adjust the sign-in button for mobile */
+    .sign-in-button {
+        background-color: #0570FA;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: 800;
+        font-size: 16px;
+        white-space: nowrap;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .reasons-travel-mobile {
+        position: relative;
+        display: flex;
+        padding: 0px 10px 0px 10px;
+        justify-content: center;
+        left: 13px;
+        gap: 5px;
+        top: -200px;
+    }
+
+    .text-thing-1 {
+        font-size: 15px;
+        position: relative;
+        font-weight: 700;
+        color: #2D3436;
+        text-shadow: -0.05px 0, 0 0.05px, 0.05px 0, 0 -0.05px, -0.05px -0.05px, 0.05px 0.05px, -0.05px 0.05px, 0.05px -0.05px;
+        top: -8px;
+        left: 3px;
+    }
+
+    .Image-base {
+        width: 43px;
+        height: 43px;
+    }
+
+    .bottom {
+        position: relative;
+        top: 5px;
+    }
+    
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6C5CE7;
+        padding: 5px 10px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    
+    .special-dola {
+        position: relative;
+        top: -1px;
+    }
+
+    .special-hire {
+        position: relative;
+        top: -1px;
+    }
+    
+    .text-thing-2 {
+        font-size: 10px;
+        position: relative;
+        width: 150px;
+        font-weight: 300;
+        line-height: 20px;
+        color: #2D3436;
+        top: -10px;
+        left: 3px;
+    }
+    
+    .base {
+        width: 180px;
+        height: 273px;
+    }    
+}
