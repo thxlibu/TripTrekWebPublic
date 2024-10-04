@@ -1,17 +1,13 @@
 /* General Styles */
 
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
     overflow-x: hidden; /* This will prevent horizontal scrolling */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none;  /* For Internet Explorer and Edge */
-}
-
-body {
-    width: 100%;
-    height: 100%;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -25,6 +21,14 @@ html::-webkit-scrollbar-thumb:hover {
 
 body, .navBarItem {
     font-family: 'Inter', sans-serif;
+}
+
+html {
+    overflow-x: hidden; /* This will prevent horizontal scrolling */
+}
+
+body {
+    overflow-x: hidden; /* This will prevent horizontal scrolling */
 }
 
 nav {
@@ -56,6 +60,9 @@ nav {
 
 .desktop-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
 }
 
 .follow-us {
@@ -64,8 +71,12 @@ nav {
     color: #ADADAD;
     font-weight: 600;
     letter-spacing: 5px;
-    bottom: 120px;
     left: 280px;
+    bottom: 130px;
+}
+
+.container-2 {
+    overflow-y: hidden;
 }
 
 .two {
@@ -265,10 +276,11 @@ nav {
 
 .bg-art-desktop {
     position: relative;
-    left: 499px;
-    top: -110px;
-    width: 100%;
-    height: 50%;
+    display: flex;
+    justify-content: right;
+    bottom: 50px;
+
+    overflow-y: hidden;
 }
 
 .blue-thing {
@@ -283,50 +295,46 @@ nav {
 }
 
 .title-1 {
-    position: relative;
+    position: absolute; /* Changed to absolute for better centering */
     display: flex;
     justify-content: center;
-    left: 470px;
-    width: 950px;
-    height: 550px;
+    align-items: center; /* Aligns items vertically */
+    width: 100%; /* Make the width responsive */
+    max-width: 1200px; /* Keeps the max width at 1300px */
+    height: 220px;
     color: #2D3436;
     text-shadow: -0.5px 0, 0 0.5px, 0.5px 0, 0 -0.5px, -0.5px -0.5px, 0.5px 0.5px, -0.5px 0.5px, 0.5px -0.5px;
-    top: -950px;
-}
-
-.title-2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-size: 55px;
-    font-weight: 900;
-    text-decoration: dotted;
-    color: #2D3436;
-    text-shadow: -0.5px 0, 0 0.5px, 0.5px 0, 0 -0.5px, -0.5px -0.5px, 0.5px 0.5px, -0.5px 0.5px, 0.5px -0.5px;
-    top: -1230px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%); /* Centers horizontally and vertically */
 }
 
 footer {
     position: relative;
     margin-top: auto; /* Pushes the footer to the bottom */
 
-    bottom: 1500px;
+    
+    bottom: 200px;
+
+    overflow-y: hidden; /* This will prevent horizontal scrolling */
+    overflow-X: hidden; /* This will prevent horizontal scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .footbackthng {
     background-color: #9BC6FD;
     display: flex;
+    margin-top: -200px;
+    z-index: 0;
     width: 100%;
-    height: calc(200vh - /* height of footer */ 100px); /* Adjust based on the footer's height */
-    justify-content: center;
-    position: absolute; /* Position it relative to the nearest positioned ancestor */
-    top: 2440px; /* Stick to the bottom of the viewport */
-    left: 0; /* Align to the left */
-    z-index: 0; /* Send to back */
+    height: 200px;
 }
 
 .Wave-Bottom {
+    position: relative;
     width: 100%;
+    bottom: 200px;
 }
 
 /* Nav items */
@@ -355,6 +363,10 @@ nav li {
 
 .title-mobile {
     display: none;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 /* Adding the dots between nav items */
@@ -383,10 +395,18 @@ nav li:last-child::after {
     position: relative;
     z-index: 1;
     border: none;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .diff-color-nav {
     color: #0570FA; /* Applying the different color back */
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .reasons-travel-desktop {
@@ -394,11 +414,15 @@ nav li:last-child::after {
     gap: 90px;
     justify-items: center;
     position: relative;
-    top: -1470px;
+    top: 230px;
     align-items: center;
     justify-content: center; /* Center grid horizontally within its container */
     align-content: center;   /* Center grid vertically within its container */
     height: 100vh;           /* Make sure it takes the full viewport height */
+    overflow-y: hidden; /* This will prevent horizontal scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    background-color: transparent;
 }
 
 .text-thing-1 {
@@ -409,6 +433,10 @@ nav li:last-child::after {
     text-shadow: -0.2px 0, 0 0.2px, 0.2px 0, 0 -0.2px, -0.2px -0.2px, 0.2px 0.2px, -0.2px 0.2px, 0.2px -0.2px;
     top: -13px;
     left: 3px;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .learn-btn-2 {
@@ -423,11 +451,19 @@ nav li:last-child::after {
     text-shadow: -0.2px 0, 0 0.2px, 0.2px 0, 0 -0.2px, -0.2px -0.2px, 0.2px 0.2px, -0.2px 0.2px, 0.2px -0.2px;
     font-size: 16px;
     white-space: nowrap;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .special-dola {
     position: relative;
     top: 23px;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .text-thing-2 {
@@ -439,15 +475,27 @@ nav li:last-child::after {
     color: #2D3436;
     top: -26px;
     left: 3px;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .base {
     width: 270px;
     height: 330px;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .diff-font-nav {
     font-weight: 600;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 /* Sign In Button */
@@ -460,35 +508,60 @@ nav li:last-child::after {
     font-weight: 800;
     font-size: 16px;
     white-space: nowrap;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 /* Hover state for Sign In button */
 .sign-in-button:hover {
     background-color: #005bb5;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .hamburger {
     display: none;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .Image-Desktop {
     display: flex;
-    justify-content: center;
-    position: relative;
-    top: -1230px;
-    left: 300px;
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    position: absolute;        /* Makes positioning relative to the parent container */
+    left: 50%;                 /* Move to the center horizontally */
+    top: 80%;                  /* Move to the center vertically */
+    transform: translate(-50%, -50%); /* Offset by 50% of the element's width and height */
+    width: 68%;               /* Set width to 100% to fit its container */
+    height: 90%;              /* Set height to 100% to fit its container */
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
+
 
 .why-travel {
     position: relative;
     display: flex;
     justify-content: left;
     left: 280px;
-    top: -1200px;
+    top: 400px;
     font-size: 25px;
     font-weight: 900;
     text-decoration: dotted;
     color: #2D3436;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .travel-2 {
@@ -496,8 +569,11 @@ nav li:last-child::after {
     font-weight: lighter;
     width: 100%;
     height: 100%;
-    top: -1200px;
     line-height: 32px;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .learnMore {
@@ -512,12 +588,20 @@ nav li:last-child::after {
     font-weight: 800;
     font-size: 26px;
     white-space: nowrap;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .Wave-Bottom {
     display: flex;
     justify-content: center;
     width: 100%;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
 .bg-art-mobile-wave {
@@ -528,7 +612,213 @@ nav li:last-child::after {
     display: none;
 }
 
+/* other desktop styles woah! */
+
+@media (max-width: 1800px) {
+    .bg-art-desktop {
+        height: 700px;
+    }
+
+    .Image-Desktop {
+        position: relative;
+        height: 820px;
+        bottom: 10px;
+    }
+
+    .learnMore {
+        position: relative;
+        top: -570px;
+        left: 290px;
+        font-size: 25px;
+    }
+
+    .why-travel {
+        position: relative;
+        top: -400px;
+    }
+
+    .reasons-travel-desktop {
+        position: relative;
+        top: -700px;
+        left: 20px;
+        gap: 70px;
+    }
+
+    .Image-base {
+        height: 70px;
+    }
+
+    .text-thing-1 {
+        text-shadow: -0.01px 0, 0 0.01px, 0.01px 0, 0 -0.01px, -0.01px -0.01px, 0.01px 0.01px, -0.01px 0.01px, 0.01px -0.01px;
+    }
+
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6C5CE7;
+        padding: 10px 20px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 300;
+        bottom: 10px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    footer {
+        bottom: 1200px;
+    }
+
+    .Wave-Bottom {
+        bottom: 1200px;
+    }
+
+    .footbackthng {
+        position: relative;
+        bottom: 1005px;
+        height: 10000000000000000vh;
+    }
+}
+
+@media (max-width: 1700px) {
+    .bg-art-desktop {
+        height: 600px;
+        bottom: 40px;
+    }
+
+    .Image-Desktop {
+        position: relative;
+        height: 780px;
+        top: 65px;
+    }
+
+    .learnMore {
+        position: relative;
+        top: -570px;
+        left: 290px;
+        font-size: 25px;
+    }
+
+    .why-travel {
+        position: relative;
+        top: -400px;
+    }
+
+    .travel-2 {
+        width: 1210px;
+    }
+
+    .reasons-travel-desktop {
+        position: relative;
+        top: -700px;
+        left: 40px;
+        gap: 50px;
+    }
+
+    .Image-base {
+        height: 60px;
+    }
+
+    .text-thing-1 {
+        text-shadow: -0px 0, 0 0px, 0px 0, 0 -0px, -0px -0px, 0px 0px, -0px 0px, 0px -0px;
+        font-size: 28px;
+    }
+
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6C5CE7;
+        padding: 10px 20px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 300;
+        bottom: 10px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    footer {
+        bottom: 1200px;
+    }
+
+    .Wave-Bottom {
+        bottom: 1200px;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        width: 100%;
+        padding: 15px 15px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        width: 160px;
+        outline: none;
+        padding-left: 50px; /* Space for the icon */
+        background-color: #f3f3f3;
+    }
+
+    .send-btn {
+        font-size: 21px;
+        padding: 25px 65px;
+        left: -340px;
+        width: 225px;
+    }
+
+    .contact-form {
+        left: -100px;
+    }
+
+    .keep-in-touch {
+        left: 60px;
+    }
+
+    .big-email {
+        left: 410px;
+    }
+
+    .bling {
+        left: 40px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .bg-art-desktop {
+        height: 550px;
+        bottom: 35px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .bg-art-desktop {
+        height: 500px;
+        bottom: 35px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .bg-art-desktop {
+        height: 450px;
+        bottom: 25px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bg-art-desktop {
+        height: 450px;
+        bottom: 25px;
+    }
+}
+
+/* mobile styles */
+
 @media (max-width: 500px) {
+    .footbackthng {
+        display: none;
+    }
+
     .bg-art-desktop {
         display: none;
     }
@@ -657,7 +947,7 @@ nav li:last-child::after {
         display: flex;
         justify-content: left;
         position: relative;
-        left: 20px;
+        left: 60px;
         top: -240px;
         font-size: 20px;
     }
@@ -700,18 +990,19 @@ nav li:last-child::after {
         border-radius: 15px;
         text-decoration: none;
         font-weight: 500;
+        bottom: 10px;
         font-size: 16px;
         white-space: nowrap;
     }
     
     .special-dola {
         position: relative;
-        top: 23px;
+        top: 13px;
     }
 
     .special-hire {
         position: relative;
-        top: 22.5px;
+        top: 13px;
     }
     
     .text-thing-2 {
@@ -739,7 +1030,7 @@ nav li:last-child::after {
     .travel-2 {
         font-size: 13px;
         position: relative;
-        width: 100%;
+        width: 430px;
         height: 70px;
         line-height: 25px;
         padding: 0px 40px 0px 0px; /* Padding applied on all sides */
@@ -832,13 +1123,13 @@ nav li:last-child::after {
         background-color: #0570FA;
         color: white;
         position: relative;
-        top: -340px;
-        left: 272px;
+        top: -360px;
+        left: 320px;
         padding: 13px 28px;
         border-radius: 40px;
         text-decoration: none;
         font-weight: 800;
-        font-size: 16px;
+        font-size: 20px;
         white-space: nowrap;
     }
 
@@ -856,7 +1147,7 @@ nav li:last-child::after {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     .reasons-travel-mobile {
         position: relative;
         display: flex;
@@ -865,6 +1156,25 @@ nav li:last-child::after {
         left: 13px;
         gap: 5px;
         top: -200px;
+    }
+    
+    .why-travel {
+        display: flex;
+        justify-content: left;
+        position: relative;
+        left: 30px;
+        top: -240px;
+        font-size: 20px;
+    }
+
+    .travel-2 {
+        font-size: 13px;
+        position: relative;
+        width: 400px;
+        height: 70px;
+        line-height: 25px;
+        padding: 0px 40px 0px 0px; /* Padding applied on all sides */
+        background-color: transparent; /* Added to help visualize padding */
     }
 
     .text-thing-1 {
@@ -910,12 +1220,26 @@ nav li:last-child::after {
     .learn-btn-2 {
         position: relative;
         background-color: transparent;
-        color: #6C5CE7;
+        color: #6c58c7;
         padding: 5px 10px;
         border: 1px solid #2D3436; /* Added border width of 4px */
         border-radius: 15px;
         text-decoration: none;
         font-weight: 300;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .learnMore {
+        background-color: #0570FA;
+        color: white;
+        position: relative;
+        top: -330px;
+        left: 250px;
+        padding: 13px 23px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 800;
         font-size: 13px;
         white-space: nowrap;
     }
@@ -945,4 +1269,111 @@ nav li:last-child::after {
         width: 180px;
         height: 273px;
     }    
+}
+
+@media (max-width: 470px) {
+    .learnMore {
+        background-color: #0570FA;
+        color: white;
+        position: relative;
+        top: -330px;
+        left: 260px;
+        padding: 13px 23px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .why-travel {
+        left: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .learnMore {
+        background-color: #0570FA;
+        color: white;
+        position: relative;
+        top: -330px;
+        left: 260px;
+        padding: 13px 23px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6c58c7;
+        padding: 5px 10px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 375px) {
+    .learnMore {
+        background-color: #0570FA;
+        color: white;
+        position: relative;
+        top: -330px;
+        left: 245px;
+        padding: 13px 23px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6c58c7;
+        padding: 5px 10px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 360px) {
+    .learnMore {
+        background-color: #0570FA;
+        color: white;
+        position: relative;
+        top: -320px;
+        left: 230px;
+        padding: 13px 23px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .learn-btn-2 {
+        position: relative;
+        background-color: transparent;
+        color: #6c58c7;
+        padding: 5px 10px;
+        border: 1px solid #2D3436; /* Added border width of 4px */
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 13px;
+        white-space: nowrap;
+    }
 }

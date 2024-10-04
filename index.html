@@ -5,192 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./Images/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>TripTrek - Website</title>
+    <style>
+        /* Hide default scrollbar */
+        body {
+            overflow: hidden;
+        }
+
+        /* Custom scroll container */
+        .scroll-container {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+
+        /* Custom scroll track */
+        .custom-scroll-track {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        /* Custom scroll thumb */
+        .custom-scroll-thumb {
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            background-color:  transparent;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <!-- Logo and text -->
-        <div class="logo-section">
-            <img src="./Images/Logo.png" alt="TripTrek Logo" class="logo-img"> <!-- Add your logo image -->
-            <a href="./index.html" class="logo-text">TripTrek</a>
-        </div>
 
-        <!-- Hamburger menu icon (for mobile view) -->
-        <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <div class="scroll-container">
+        <div class="content">
+            <!-- Your content goes here -->
 
-        <!-- Navigation links -->
-        <ul>
-            <li><a href="./index.html" class="navBarItem diff-font-nav">How it works</a></li>
-            <li><a href="./index.html" class="navBarItem diff-color-nav">Corporate</a></li>
-            <li><a href="./index.html" class="navBarItem diff-color-nav">What we do</a></li>
-            <li><a href="./index.html" class="navBarItem diff-color-nav">Contact us</a></li>
-        </ul>
-
-        <!-- Sign In button -->
-        <a href="./signin.html" class="sign-in-button">Sign In</a>
-    </nav>
-    
-    <div class="container">
-        <div class="bg-art-mobile">
-            <img src="./Images/Group 1.svg" alt="bg-art">
-        </div>
-    </div>
-    
-    <div class="icon-arrow-mobile">
-        <img src="./Images/Icon Acrylic.png" alt="bg-arrow-THING">
-    </div>
-    
-    <div class="title-mobile">
-        <img src="./Images/TitleThing-MOBILE.svg" alt="bg-arrow-THING">
-    </div>  
-
-    <div class="image-mobile">
-        <img src="./Images/Image-Mobile.svg" alt="Yh yh"></img>
-    </div>
-
-    <div class="bg-art-desktop"><img loading="lazy" src="./Images/Bg-Art.png" alt="bg-art"></div>
-
-    <img src="./Images/Moving Passion within.svg" alt="TITLE-1" class="title-1"></img>
-    <p class="title-2">Unified Sea Travel Platform</p>
-
-    <img src="./Images/Images-Desktop.png" alt="Images-Desktop" class="Image-Desktop"></img>
-    <a href="./index.html" class="learnMore">Learn More</a>
-
-
-    <p class="why-travel">Why Travel With Us? 🚚💨</p>
-    <p class="why-travel travel-2">We have developed and curated the entire TripTrek Platform with Security, Convinience and Ease of Acces in mind. It helps customers travel arround the Maldives in a few taps.</p>
-    
-    <div class="reasons-travel-desktop">
-        <div class="base">
-            <img src="./Images/Phone.svg" alt="Phone" class="Image-base">
-            <p class="text-thing-1">Support</p>
-            <p class="text-thing-2">Delivering faster and more personalized support with better and improved AI and real humans for ease of mind.</p>
-            <a href="./index.html" class="learn-btn-2">Learn more</a>
-        </div>
-        <div class="base">
-            <img src="./Images/SomeThing.svg" alt="ion know what this is" class="Image-base">
-            <p class="text-thing-1">Instant Booking</p>
-            <p class="text-thing-2">Get your booking confirmation and ticket faster than ever. With the help of our system life is much easier now !</p>
-            <a href="./index.html" class="learn-btn-2">Learn more</a>
-        </div>
-        <div class="base">
-            <img src="./Images/DollaSign.svg" alt="DollaSign" class="Image-base">
-            <p class="text-thing-1">No Price Change</p>
-            <p class="text-thing-2">Wether you book with us or not, you will pay the same ith the lowest avalible rates offered to you.</p>
-            <a href="./index.html" class="learn-btn-2 special-dola">Learn more</a>
-        </div>
-        <div class="base">
-            <img src="./Images/Message.svg" alt="Phone" class="Image-base">
-            <p class="text-thing-1">Private Hire</p>
-            <p class="text-thing-2">Now you can hire a vessel for that decade old family trip or just a vessel for yourself to unwind and relax.</p>
-            <a href="./index.html" class="learn-btn-2">Learn more</a>
-        </div>
-    </div>
-
-    <div class="reasons-travel-mobile">
-        <div class="cloumn-1 def-column">
-            <div class="base">
-                <img src="./Images/Phone.svg" alt="Phone" class="Image-base">
-                <p class="text-thing-1">Support</p>
-                <p class="text-thing-2">Delivering faster and more personalized support with better and improved AI and real humans for ease of mind.</p>
-                <a href="./index.html" class="learn-btn-2">Learn more</a>
-            </div>
-            <div class="base bottom">
-                <img src="./Images/SomeThing.svg" alt="ion know what this is" class="Image-base">
-                <p class="text-thing-1">Instant Booking</p>
-                <p class="text-thing-2">Get your booking confirmation and ticket faster than ever. With the help of our system life is much easier now !</p>
-                <a href="./index.html" class="learn-btn-2">Learn more</a>
-            </div>
-        </div>
-        <div class="cloumn-2 def-column">
-            <div class="base">
-                <img src="./Images/DollaSign.svg" alt="DollaSign" class="Image-base">
-                <p class="text-thing-1">No Price Change</p>
-                <p class="text-thing-2">Wether you book with us or not, you will pay the same ith the lowest avalible rates offered to you.</p>
-                <a href="./index.html" class="learn-btn-2 special-dola">Learn more</a>
-            </div>
-            <div class="base bottom">
-                <img src="./Images/Message.svg" alt="Phone" class="Image-base">
-                <p class="text-thing-1">Private Hire</p>
-                <p class="text-thing-2">Now you can hire a vessel for that decade old family trip or just a vessel for yourself to unwind and relax.</p>
-                <a href="./index.html" class="learn-btn-2 special-hire">Learn more</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="desktop-footer"></div>
-            <p class="follow-us">FOLLOW US</p>
-            <p class="follow-us two">FOLLOW US</p>
-
-            <div class="social-icons">
-                <a href="#" class="icon">
-                    <img src="Images/icon-facebook.svg" alt="Facebook">
-                </a>
-                <a href="#" class="icon">
-                    <img src="./Images/icon-linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="#" class="icon">
-                    <img src="./Images/icon-slack.svg" alt="Hashtag">
-                </a>
-                <a href="#" class="icon">
-                    <img src="./Images/icon-twitter.svg" alt="Twitter">
-                </a>
-            </div>
-
-            <p class="information">INFORMATION</p>
-
-            <div class="columns-container">
-                <div class="left-column">
-                    <a href="#" class="link">About TripTrek Platform</a>
-                    <a href="#" class="link">Get in Touch</a>
-                    <a href="#" class="link">Things We Like</a>
+            <nav>
+                <!-- Logo and text -->
+                <div class="logo-section">
+                    <img src="./Images/Logo.png" alt="TripTrek Logo" class="logo-img"> <!-- Add your logo image -->
+                    <a href="./index.html" class="logo-text">TripTrek</a>
                 </div>
-                <div class="right-column">
-                    <a href="#" class="link active">Onhovered / Active</a>
-                    <a href="#" class="link">Privacy Policy</a>
-                    <a href="#" class="link">Terms of Service</a>
-                </div>
-
-                <p class="two big-email">hello@triptrek.travel</p>
-
-                <p class="keep-in-touch">KEEP IN TOUCH</p>
-
-                <div class="contact-form">
-                    <div class="form-row">
-                        <div class="input-box">
-                            <input type="text" placeholder="Your name">
-                            <img src="./Images/icon-mail.svg" alt="User icon" class="icon">
-                        </div>
-                        <div class="input-box">
-                            <input type="email" placeholder="E-mail">
-                            <img src="./Images/icon-mail.svg" alt="Email icon" class="icon">
-                        </div>
-                    </div>
-                    <div class="input-box message-box">
-                        <textarea placeholder="Leave your message"></textarea>
-                        <img src="./Images/icon-edit.svg" alt="Edit icon" class="icon icon-message-BOX">
-                    </div>
-                </div>
-                <button type="submit" class="send-btn">SEND</button>
-            </div>
-        </div>
-
-        <img src="./Images/Wave.svg" class="Wave-Bottom" alt="Wave" />
-    </footer>
-
-    <div class="footbackthng">
         
+                <!-- Hamburger menu icon (for mobile view) -->
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+        
+                <!-- Navigation links -->
+                <ul>
+                    <li><a href="./index.html" class="navBarItem diff-font-nav">How it works</a></li>
+                    <li><a href="./index.html" class="navBarItem diff-color-nav">Corporate</a></li>
+                    <li><a href="./index.html" class="navBarItem diff-color-nav">What we do</a></li>
+                    <li><a href="./index.html" class="navBarItem diff-color-nav">Contact us</a></li>
+                </ul>
+        
+                <!-- Sign In button -->
+                <a href="./signin.html" class="sign-in-button">Sign In</a>
+            </nav>
+            
+            <div class="container">
+                <div class="bg-art-mobile">
+                    <img src="./Images/Group 1.svg" alt="bg-art">
+                </div>
+            </div>
+            
+            <div class="icon-arrow-mobile">
+                <img src="./Images/Icon Acrylic.png" alt="bg-arrow-THING">
+            </div>
+            
+            <div class="title-mobile">
+                <img src="./Images/TitleThing-MOBILE.svg" alt="bg-arrow-THING">
+            </div>  
+        
+            <div class="image-mobile">
+                <img src="./Images/Image-Mobile.svg" alt="Yh yh"></img>
+            </div>
+        
+            <!--The blue thing on the corner of the screen-->
+            <div class="container-2">
+                <div class="bg-art-desktop">
+                    <div class="bg-art-desktop"><img src="./Images/Bg-Art.png" alt="bg-art"></div>
+                </div>
+            </div>
+            
+        
+            <img src="./Images/TitleDesktop.png" alt="TITLE-1" class="title-1"></img>
+        
+            <img src="./Images/Images-Desktop.png" alt="Images-Desktop" class="Image-Desktop"></img>
+            
+            <a href="./index.html" class="learnMore">Learn More</a>
+        
+        
+            <p class="why-travel">Why Travel With Us? 🚚💨</p>
+            <p class="why-travel travel-2">We have developed and curated the entire TripTrek Platform with Security, Convinience and Ease of Acces in mind. It helps customers travel arround the Maldives in a few taps.</p>
+            
+            <div class="reasons-travel-desktop">
+                <div class="base">
+                    <img src="./Images/Phone.svg" alt="Phone" class="Image-base">
+                    <p class="text-thing-1">Support</p>
+                    <p class="text-thing-2">Delivering faster and more personalized support with better and improved AI and real humans for ease of mind.</p>
+                    <a href="./index.html" class="learn-btn-2">Learn more</a>
+                </div>
+                <div class="base">
+                    <img src="./Images/SomeThing.svg" alt="ion know what this is" class="Image-base">
+                    <p class="text-thing-1">Instant Booking</p>
+                    <p class="text-thing-2">Get your booking confirmation and ticket faster than ever. With the help of our system life is much easier now !</p>
+                    <a href="./index.html" class="learn-btn-2">Learn more</a>
+                </div>
+                <div class="base">
+                    <img src="./Images/DollaSign.svg" alt="DollaSign" class="Image-base">
+                    <p class="text-thing-1">No Price Change</p>
+                    <p class="text-thing-2">Wether you book with us or not, you will pay the same ith the lowest avalible rates offered to you.</p>
+                    <a href="./index.html" class="learn-btn-2 special-dola">Learn more</a>
+                </div>
+                <div class="base">
+                    <img src="./Images/Message.svg" alt="Phone" class="Image-base">
+                    <p class="text-thing-1">Private Hire</p>
+                    <p class="text-thing-2">Now you can hire a vessel for that decade old family trip or just a vessel for yourself to unwind and relax.</p>
+                    <a href="./index.html" class="learn-btn-2">Learn more</a>
+                </div>
+            </div>
+        
+            <div class="reasons-travel-mobile">
+                <div class="cloumn-1 def-column">
+                    <div class="base">
+                        <img src="./Images/Phone.svg" alt="Phone" class="Image-base">
+                        <p class="text-thing-1">Support</p>
+                        <p class="text-thing-2">Delivering faster and more personalized support with better and improved AI and real humans for ease of mind.</p>
+                        <a href="./index.html" class="learn-btn-2">Learn more</a>
+                    </div>
+                    <div class="base bottom">
+                        <img src="./Images/SomeThing.svg" alt="ion know what this is" class="Image-base">
+                        <p class="text-thing-1">Instant Booking</p>
+                        <p class="text-thing-2">Get your booking confirmation and ticket faster than ever. With the help of our system life is much easier now !</p>
+                        <a href="./index.html" class="learn-btn-2">Learn more</a>
+                    </div>
+                </div>
+                <div class="cloumn-2 def-column">
+                    <div class="base">
+                        <img src="./Images/DollaSign.svg" alt="DollaSign" class="Image-base">
+                        <p class="text-thing-1">No Price Change</p>
+                        <p class="text-thing-2">Wether you book with us or not, you will pay the same ith the lowest avalible rates offered to you.</p>
+                        <a href="./index.html" class="learn-btn-2 special-dola">Learn more</a>
+                    </div>
+                    <div class="base bottom">
+                        <img src="./Images/Message.svg" alt="Phone" class="Image-base">
+                        <p class="text-thing-1">Private Hire</p>
+                        <p class="text-thing-2">Now you can hire a vessel for that decade old family trip or just a vessel for yourself to unwind and relax.</p>
+                        <a href="./index.html" class="learn-btn-2 special-hire">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        
+            <footer>
+                <div class="desktop-footer"></div>
+                    <p class="follow-us">FOLLOW US</p>
+                    <p class="follow-us two bling">FOLLOW US</p>
+        
+                    <div class="social-icons">
+                        <a href="#" class="icon">
+                            <img src="Images/icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="./Images/icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="./Images/icon-slack.svg" alt="Hashtag">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="./Images/icon-twitter.svg" alt="Twitter">
+                        </a>
+                    </div>
+        
+                    <p class="information">INFORMATION</p>
+        
+                    <div class="columns-container">
+                        <div class="left-column">
+                            <a href="#" class="link">About TripTrek Platform</a>
+                            <a href="#" class="link">Get in Touch</a>
+                            <a href="#" class="link">Things We Like</a>
+                        </div>
+                        <div class="right-column">
+                            <a href="#" class="link active">Onhovered / Active</a>
+                            <a href="#" class="link">Privacy Policy</a>
+                            <a href="#" class="link">Terms of Service</a>
+                        </div>
+        
+                        <p class="two big-email">hello@triptrek.travel</p>
+        
+                        <p class="keep-in-touch">KEEP IN TOUCH</p>
+        
+                        <div class="contact-form">
+                            <div class="form-row">
+                                <div class="input-box">
+                                    <input type="text" id="name" placeholder="Your name" required>
+                                    <img src="./Images/icon-mail.svg" alt="User icon" class="icon">
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" id="email" placeholder="E-mail" required>
+                                    <img src="./Images/icon-mail.svg" alt="Email icon" class="icon">
+                                </div>
+                            </div>
+                            <div class="input-box message-box">
+                                <textarea id="message" placeholder="Leave your message" required></textarea>
+                                <img src="./Images/icon-edit.svg" alt="Edit icon" class="icon icon-message-box">
+                            </div>
+                        </div>
+                        <button type="submit" class="send-btn" onclick="sendEmail()">SEND</button>
+                    </div>
+                </div>
+        
+                <img src="./Images/Wave.svg" class="Wave-Bottom" alt="Wave" />
+
+                <div class="footbackthng"></div>
+            </footer>
+                
+            </div>
+        </div>
+        <!-- Custom scroll bar cuz of sum dum issue ;( -->
+        <div class="custom-scroll-track">
+            <div class="custom-scroll-thumb"></div>
+        </div>
     </div>
 
     <script>
+           const scrollContainer = document.querySelector('.scroll-container');
+        const scrollThumb = document.querySelector('.custom-scroll-thumb');
+        const content = document.querySelector('.content');
+
+        let isDragging = false;
+        let startY;
+        let startScrollTop;
+
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('nav ul');
 
@@ -198,6 +257,83 @@
             hamburger.classList.toggle('active'); // Add this to toggle the active class
             navLinks.classList.toggle('active');
         });
+
+        // Update scroll thumb position
+        function updateScrollThumb() {
+            const scrollRatio = scrollContainer.scrollTop / (content.scrollHeight - scrollContainer.clientHeight);
+            const thumbHeight = (scrollContainer.clientHeight / content.scrollHeight) * scrollContainer.clientHeight;
+            const thumbTop = scrollRatio * (scrollContainer.clientHeight - thumbHeight);
+
+            scrollThumb.style.height = `${thumbHeight}px`;
+            scrollThumb.style.top = `${thumbTop}px`;
+        }
+
+        // Scroll event listener for PC scroll wheel
+        scrollContainer.addEventListener('wheel', (e) => {
+            e.preventDefault(); // Disable default behavior
+            scrollContainer.scrollTop += e.deltaY;
+            updateScrollThumb(); // Update custom scrollbar
+        });
+
+        // Scroll event listener for mobile drag/touch scrolling
+        let touchStartY;
+        let touchStartScrollTop;
+
+        scrollContainer.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].clientY;
+            touchStartScrollTop = scrollContainer.scrollTop;
+        });
+
+        scrollContainer.addEventListener('touchmove', (e) => {
+            e.preventDefault(); // Disable default touch scrolling
+            const deltaY = touchStartY - e.touches[0].clientY;
+            scrollContainer.scrollTop = touchStartScrollTop + deltaY;
+            updateScrollThumb(); // Update custom scrollbar
+        });
+
+        // Scroll event listener for dragging the custom thumb
+        scrollThumb.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startY = e.clientY;
+            startScrollTop = scrollContainer.scrollTop;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const deltaY = e.clientY - startY;
+                const scrollRatio = (content.scrollHeight - scrollContainer.clientHeight) / scrollContainer.clientHeight;
+                scrollContainer.scrollTop = startScrollTop + deltaY * scrollRatio;
+                updateScrollThumb();
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        // Touch-based drag for mobile
+        scrollThumb.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startY = e.touches[0].clientY;
+            startScrollTop = scrollContainer.scrollTop;
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging) {
+                const deltaY = e.touches[0].clientY - startY;
+                const scrollRatio = (content.scrollHeight - scrollContainer.clientHeight) / scrollContainer.clientHeight;
+                scrollContainer.scrollTop = startScrollTop + deltaY * scrollRatio;
+                updateScrollThumb();
+            }
+        });
+
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        // Initialize the custom scrollbar position on load
+        window.addEventListener('load', updateScrollThumb);
     </script>
+
 </body>
 </html>

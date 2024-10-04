@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="./Images/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>TripTrek - Website</title>
@@ -53,12 +54,18 @@
         <img src="./Images/Image-Mobile.svg" alt="Yh yh"></img>
     </div>
 
-    <div class="bg-art-desktop"><img loading="lazy" src="./Images/Bg-Art.png" alt="bg-art"></div>
+    <!--The blue thing on the corner of the screen-->
+    <div class="container-2">
+        <div class="bg-art-desktop">
+            <div class="bg-art-desktop"><img src="./Images/Bg-Art.png" alt="bg-art"></div>
+        </div>
+    </div>
+    
 
-    <img src="./Images/Moving Passion within.svg" alt="TITLE-1" class="title-1"></img>
-    <p class="title-2">Unified Sea Travel Platform</p>
+    <img src="./Images/TitleDesktop.png" alt="TITLE-1" class="title-1"></img>
 
-    <img src="./Images/Images-Desktop.svg" alt="Images-Desktop" class="Image-Desktop"></img>
+    <img src="./Images/Images-Desktop.png" alt="Images-Desktop" class="Image-Desktop"></img>
+    
     <a href="./index.html" class="learnMore">Learn More</a>
 
 
@@ -123,7 +130,70 @@
         </div>
     </div>
 
-    <img src="./Images/Wave.svg" class="Wave-Bottom" alt="Wave">
+    <footer>
+        <div class="desktop-footer"></div>
+            <p class="follow-us">FOLLOW US</p>
+            <p class="follow-us two">FOLLOW US</p>
+
+            <div class="social-icons">
+                <a href="#" class="icon">
+                    <img src="Images/icon-facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="icon">
+                    <img src="./Images/icon-linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="#" class="icon">
+                    <img src="./Images/icon-slack.svg" alt="Hashtag">
+                </a>
+                <a href="#" class="icon">
+                    <img src="./Images/icon-twitter.svg" alt="Twitter">
+                </a>
+            </div>
+
+            <p class="information">INFORMATION</p>
+
+            <div class="columns-container">
+                <div class="left-column">
+                    <a href="#" class="link">About TripTrek Platform</a>
+                    <a href="#" class="link">Get in Touch</a>
+                    <a href="#" class="link">Things We Like</a>
+                </div>
+                <div class="right-column">
+                    <a href="#" class="link active">Onhovered / Active</a>
+                    <a href="#" class="link">Privacy Policy</a>
+                    <a href="#" class="link">Terms of Service</a>
+                </div>
+
+                <p class="two big-email">hello@triptrek.travel</p>
+
+                <p class="keep-in-touch">KEEP IN TOUCH</p>
+
+                <div class="contact-form">
+                    <div class="form-row">
+                        <div class="input-box">
+                            <input type="text" id="name" placeholder="Your name" required>
+                            <img src="./Images/icon-mail.svg" alt="User icon" class="icon">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" placeholder="E-mail" required>
+                            <img src="./Images/icon-mail.svg" alt="Email icon" class="icon">
+                        </div>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea id="message" placeholder="Leave your message" required></textarea>
+                        <img src="./Images/icon-edit.svg" alt="Edit icon" class="icon icon-message-box">
+                    </div>
+                </div>
+                <button type="submit" class="send-btn" onclick="sendEmail()">SEND</button>
+            </div>
+        </div>
+
+        <img src="./Images/Wave.svg" class="Wave-Bottom" alt="Wave" />
+    </footer>
+
+    <div class="footbackthng"></div>
+        
+    </div>
 
     <script>
         const hamburger = document.querySelector('.hamburger');
@@ -133,6 +203,36 @@
             hamburger.classList.toggle('active'); // Add this to toggle the active class
             navLinks.classList.toggle('active');
         });
+
+        async function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            try {
+                const response = await fetch('http://127.0.0.1:5500/send-email', {  // Backend URL
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),  // Send form data to the backend
+                });
+
+                if (response.ok) {
+                    alert('Email sent successfully!');
+                } else {
+                    alert('Failed to send email this is a bug yh.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('There was an error sending the email.');
+            }
+        }
     </script>
 </body>
 </html>
